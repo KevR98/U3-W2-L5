@@ -4,7 +4,7 @@ const Footer = function () {
       className='text-center bg-black text-white footer-height'
       data-bs-theme='dark'
     >
-      <p>EPICODE - {new Date().getFullYear()}</p>
+      <p>Kevin Ramil - {new Date().getFullYear()}</p>
     </footer>
   );
 };
