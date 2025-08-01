@@ -1,6 +1,14 @@
 .footer-height {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.weather-card:hover {
+  transform: scale(1.1);
+}
+
+.weather-card {
+  transition: transform 0.2s;
 }
