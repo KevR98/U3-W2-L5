@@ -12,9 +12,7 @@ const Welcome = ({ cityChange }) => {
 
   return (
     <>
-      <Alert className='text-center'>
-        <h1>Benvenuto!</h1>
-      </Alert>
+      <h1 className='text-center'>Benvenuto!</h1>
       <Container>
         <Row className='justify-content-center my-5'>
           <Col xs={12} md={6}>
