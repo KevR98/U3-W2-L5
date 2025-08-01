@@ -47,7 +47,8 @@ function SingleWeather({ search }) {
             <Card.Title>
               {data.name}, {data.sys.country}
             </Card.Title>
-            <h3>{Math.round(data.main.temp)}°C</h3>
+            <h3>{Math.round(data.main.temp)}°C</h3>{' '}
+            {/* Con Math.round arrontondo il numero in quello più vicino */}
             <p className='text-capitalize'>{data.weather.description}</p>
             <div className='d-flex justify-content-between'>
               <small>Umidità: {data.main.humidity}%</small>

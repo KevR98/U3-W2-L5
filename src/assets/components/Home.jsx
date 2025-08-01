@@ -61,7 +61,8 @@ function Home() {
                 <Card.Title>
                   {weather.name}, {weather.sys.country}
                 </Card.Title>
-                <h3>{Math.round(weather.main.temp)}°C</h3>
+                <h3>{Math.round(weather.main.temp)}°C</h3>{' '}
+                {/* Con Math.round arrontondo il numero in quello più vicino */}
                 <p className='text-capitalize'>{weather.weather.description}</p>
                 <div className='d-flex justify-content-between'>
                   <small>Umidità: {weather.main.humidity}%</small>
