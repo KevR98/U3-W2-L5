@@ -4,6 +4,7 @@ import { Card, Container } from 'react-bootstrap';
 const URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const key = 'ebe004d116c5e95d69a6a8cc6d2c456e';
 
+// funzione con la prop search passata in app.jsx
 function Home({ search }) {
   const [data, setData] = useState({});
 
@@ -33,13 +34,13 @@ function Home({ search }) {
         <Card className='mx-auto' style={{ maxWidth: '400px' }}>
           <Card.Body className='text-center'>
             <Card.Title>
-              {data.name}, {data.sys?.country}
+              {data.name}, {data.sys.country}
             </Card.Title>
-            <h3>{Math.round(data.main?.temp)}°C</h3>
-            <p className='text-capitalize'>{data.weather?.[0]?.description}</p>
+            <h3>{Math.round(data.main.temp)}°C</h3>
+            <p className='text-capitalize'>{data.weather.description}</p>
             <div className='d-flex justify-content-between'>
-              <small>Umidità: {data.main?.humidity}%</small>
-              <small>Vento: {data.wind?.speed} m/s</small>
+              <small>Umidità: {data.main.humidity}%</small>
+              <small>Vento: {data.wind.speed} m/s</small>
             </div>
           </Card.Body>
         </Card>

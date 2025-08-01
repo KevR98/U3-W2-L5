@@ -11,7 +11,9 @@ function App() {
   return (
     <>
       <MyNavbar />
+      {/* Passo la props della selezione nel welcome allo stato settandolo*/}
       <Welcome cityChange={setSearch} />
+      {/* Prendo lo stato settato con la prop welcome */}
       <Home search={search} />
       <Footer />
     </>

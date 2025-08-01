@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Alert, Col, Container, Form, Row } from 'react-bootstrap';
 
+// Creo la funzione con la sua props messa in app.jsx
 const Welcome = ({ cityChange }) => {
-  const [city, setCity] = useState('Milan, IT');
+  const [city, setCity] = useState('Milan, IT'); // Setto lo stato a default
 
   useEffect(() => {
     cityChange('Milan, IT');
@@ -23,7 +24,7 @@ const Welcome = ({ cityChange }) => {
               value={city}
               onChange={(e) => {
                 setCity(e.target.value);
-                cityChange(e.target.value);
+                cityChange(e.target.value); // Salvo il valore nella props
               }}
             >
               <option>Milan, IT</option>
